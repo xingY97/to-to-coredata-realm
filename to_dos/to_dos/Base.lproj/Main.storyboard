@@ -29,7 +29,13 @@
                             <outlet property="delegate" destination="vti-S4-SIB" id="cpv-eJ-5cE"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="ToDO" id="yxZ-Sh-eIy"/>
+                    <navigationItem key="navigationItem" title="ToDO" id="yxZ-Sh-eIy">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="zdr-hO-UD5">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="vti-S4-SIB" id="osK-ob-1iU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LYo-tl-i3q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
