@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  to_dos
+//  CoreDataModel
 //
-//  Created by XIN on 7/21/20.
+//  Created by XIN on 7/29/20.
 //  Copyright © 2020 XIN. All rights reserved.
 //
 
@@ -15,9 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        
-        
+        // Override point for customization after application launch.
         return true
     }
 
@@ -44,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "DataModel")
+        let container = NSPersistentContainer(name: "CoreDataModel")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
@@ -79,7 +77,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
 
 }
 
