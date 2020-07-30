@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ToDO-->
+        <!--items-->
         <scene sceneID="Gke-j8-X5j">
             <objects>
                 <tableViewController id="vti-S4-SIB" customClass="ToDoListViewController" customModule="to_dos" customModuleProvider="target" sceneMemberID="viewController">
@@ -37,7 +37,7 @@
                             <outlet property="delegate" destination="vti-S4-SIB" id="cpv-eJ-5cE"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="ToDO" id="yxZ-Sh-eIy">
+                    <navigationItem key="navigationItem" title="items" id="yxZ-Sh-eIy">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="zdr-hO-UD5">
                             <connections>
                                 <action selector="addButtonPressed:" destination="vti-S4-SIB" id="osK-ob-1iU"/>
@@ -48,6 +48,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LYo-tl-i3q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-348" y="9"/>
+        </scene>
+        <!--Todos-->
+        <scene sceneID="1jF-5h-TjN">
+            <objects>
+                <tableViewController id="pw5-gm-d0P" customClass="CategoryViewController" customModule="to_dos" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2EP-UF-Fb2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="rhG-4I-bej">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rhG-4I-bej" id="wcU-uU-IMW">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pw5-gm-d0P" id="46w-KA-9Qm"/>
+                            <outlet property="delegate" destination="pw5-gm-d0P" id="pSe-bR-Sk2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Todos" id="PI6-VP-JMy">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="kIo-qx-wSE">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="pw5-gm-d0P" id="VlJ-B7-Hmd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="vti-S4-SIB" kind="show" identifier="goToItems" id="Vkg-FQ-zse"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pqR-Ob-DkP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1188" y="9"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="i14-Vh-lmH">
@@ -61,12 +99,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vti-S4-SIB" kind="relationship" relationship="rootViewController" id="1LZ-jv-P2L"/>
+                        <segue destination="pw5-gm-d0P" kind="relationship" relationship="rootViewController" id="Lew-H5-wsS"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CPw-vB-bX5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1100" y="9"/>
+            <point key="canvasLocation" x="-2101" y="9"/>
         </scene>
     </scenes>
 </document>

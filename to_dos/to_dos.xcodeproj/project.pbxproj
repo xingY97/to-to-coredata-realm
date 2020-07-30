@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		225DC69D24D262E200EF5BA4 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225DC69C24D262E200EF5BA4 /* CategoryViewController.swift */; };
 		22E81E3624C76943007EDA3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E81E3524C76943007EDA3C /* AppDelegate.swift */; };
 		22E81E3824C76943007EDA3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E81E3724C76943007EDA3C /* SceneDelegate.swift */; };
 		22E81E3A24C76943007EDA3C /* ToDoListVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E81E3924C76943007EDA3C /* ToDoListVIewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		225DC69C24D262E200EF5BA4 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = SOURCE_ROOT; };
 		22E81E3224C76943007EDA3C /* to_dos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = to_dos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E81E3524C76943007EDA3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22E81E3724C76943007EDA3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		22E81E4C24CF56F8007EDA3C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				225DC69C24D262E200EF5BA4 /* CategoryViewController.swift */,
 				22E81E3924C76943007EDA3C /* ToDoListVIewController.swift */,
 			);
 			path = Controllers;
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				225DC69D24D262E200EF5BA4 /* CategoryViewController.swift in Sources */,
 				22E81E5024D1F763007EDA3C /* DataModel.xcdatamodeld in Sources */,
 				22E81E3A24C76943007EDA3C /* ToDoListVIewController.swift in Sources */,
 				22E81E3624C76943007EDA3C /* AppDelegate.swift in Sources */,
