@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import ChameleonFramework
 
 class ToDoListViewController: SwipeTableViewController {
 
@@ -27,6 +28,7 @@ class ToDoListViewController: SwipeTableViewController {
         
         //print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
         
+        tableView.separatorStyle = .none
     }
     
     //MARK - Tableview Datasource Methods
@@ -43,6 +45,13 @@ class ToDoListViewController: SwipeTableViewController {
             
             cell.textLabel?.text = item.title
             
+            if let colour = UIColor(hexString: selectedCategory!.colour)?.darken(byPercentage: CGFloat(indexPath.row) / CGFloat(todoItems!.count)) {
+                cell.backgroundColor = colour
+                cell.textLabel?.textColor = ContrastColorOf(colour, returnFlat: true)
+            }
+            
+            
+                
             //set the cell accessory type depending on item.done is true or not (Tenary operator)
             cell.accessoryType = item.done == true ? .checkmark : .none
         } else {
