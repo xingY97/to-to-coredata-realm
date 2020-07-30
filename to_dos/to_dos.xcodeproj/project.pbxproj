@@ -13,7 +13,6 @@
 		22E81E3D24C76943007EDA3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E81E3B24C76943007EDA3C /* Main.storyboard */; };
 		22E81E3F24C76945007EDA3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E81E3E24C76945007EDA3C /* Assets.xcassets */; };
 		22E81E4224C76945007EDA3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E81E4024C76945007EDA3C /* LaunchScreen.storyboard */; };
-		22E81E4A24CF56E3007EDA3C /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E81E4924CF56E3007EDA3C /* Items.swift */; };
 		22E81E5024D1F763007EDA3C /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22E81E4E24D1F763007EDA3C /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		22E81E3E24C76945007EDA3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22E81E4124C76945007EDA3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22E81E4324C76945007EDA3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22E81E4924CF56E3007EDA3C /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 		22E81E4F24D1F763007EDA3C /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				22E81E4E24D1F763007EDA3C /* DataModel.xcdatamodeld */,
-				22E81E4924CF56E3007EDA3C /* Items.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -168,7 +165,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22E81E4A24CF56E3007EDA3C /* Items.swift in Sources */,
 				22E81E5024D1F763007EDA3C /* DataModel.xcdatamodeld in Sources */,
 				22E81E3A24C76943007EDA3C /* ToDoListVIewController.swift in Sources */,
 				22E81E3624C76943007EDA3C /* AppDelegate.swift in Sources */,
