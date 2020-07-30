@@ -6,5 +6,6 @@ target 'to_dos' do
 
   # Pods for to_dos
   pod 'RealmSwift'
-  pod 'SwipeCellKit' 
+  pod 'SwipeCellKit'
+  pod 'ChameleonFramework/Swift', :git => 'https://github.com/wowansm/Chameleon.git', :branch => 'swift5'
 end
